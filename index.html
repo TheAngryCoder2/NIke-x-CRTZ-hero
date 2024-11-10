@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags and Fonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike x CRTZ Air Huarache</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/5ed7ecda58.js" crossorigin="anonymous"></script>
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black w-full h-full font-[Anton] text-white">
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="flex justify-between items-center w-[85%] mx-auto mt-3">
+            <div class="flex items-center justify-center gap-3">
+                <img src="Nike Logo.png" alt="Nike Logo" class="w-11">
+                <i class="fa-solid fa-x"></i>
+                <img src="Crtz Logo.webp" alt="CRTZ Logo" class="w-16">
+            </div>
+            <ul class="flex items-center gap-4">
+                <li><a class="hover:text-gray-300" href="#">Home</a></li>
+                <li><a class="hover:text-gray-300" href="#">Shop</a></li>
+                <li><a class="hover:text-gray-300" href="#">Cart</a></li>
+                <li><a class="hover:text-gray-300" href="#">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Images -->
+    <div>
+        <img src="shoot2.webp" alt="Product Side View" class="w-16 absolute top-96 right-80 border-2 hover:border-4 border-white hover:w-52 duration-500">
+        <img src="shoot3.webp" alt="Product Front View" class="w-16 absolute top-36 left-72 border-2 hover:border-4 border-white hover:w-52 duration-500">
+        <img src="shoe.webp" id="shoe" alt="Main Product Image" class="w-16 absolute bottom-20 left-96">
+    </div>
+
+    <!-- Logos -->
+    <div>
+        <img src="CRTZ-Yellow.webp" alt="CRTZ Logo" class="absolute rotate-45 w-48 top-56 left-20">
+        <img src="CRTZ-Yellow.webp" alt="CRTZ Logo" class="absolute rotate-45 w-48 top-60 right-36">
+        <img src="CRTZ-Yellow.webp" alt="CRTZ Logo" class="absolute rotate-45 w-48 bottom-60 right-96">
+        <img src="CRTZ-Yellow.webp" alt="CRTZ Logo" class="absolute rotate-45 w-48 bottom-80 left-1/2">
+        <img src="CRTZ-Yellow.webp" alt="CRTZ Logo" class="absolute rotate-45 w-48 top-36 left-96">
+        <img src="CRTZ-Yellow.webp" alt="CRTZ Logo" class="absolute rotate-45 w-48 bottom-36 left-96">
+    </div>
+
+    <!-- Product Card -->
+    <div id="product-card" class="hidden product-card absolute inset-0 flex items-center justify-center">
+        <div class="bg-white text-black p-6 rounded-lg shadow-lg max-w-xs w-full">
+            <img src="shoe.webp" alt="Nike x CRTZ Air Huarache" class="w-full">
+            <h4 class="text-xl font-bold my-4">Nike x CRTZ Air Huarache</h4>
+            <div class="flex justify-between items-center text-lg">
+                <span>£120</span>
+                <button class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-800" aria-label="Add to Cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
